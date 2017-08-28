@@ -34,4 +34,4 @@ RUN wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR166/009/ERR1664619/ERR1664619_1.f
 RUN wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR166/009/ERR1664619/ERR1664619_2.fastq.gz
 
 # Set default container command
-ENTRYPOINT tb-profiler full -1 ERR1664619_1.fastq.gz -2 ERR1664619_2.fastq.gz -t 4 -p ERR1664619
+CMD ["tb-profiler", "full", "-1", "ERR1664619_1.fastq.gz", "-2", "ERR1664619_2.fastq.gz", "-t", "4", "-p", "ERR1664619"]
